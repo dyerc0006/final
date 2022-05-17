@@ -1,0 +1,162 @@
+.grid-container {
+  display: inline-grid;
+  grid-template-columns:50px 295px 300px 300px 300px 300px 295px 50px ;
+  grid-template-rows: 50px 100px 735px 870px 70px;
+  row-gap: 20px;
+
+}
+
+.emergencyPlanning{
+ grid-column-start: 3;
+ grid-column-end: 4;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ overflow: hidden;
+}
+
+.vaccinations{
+ grid-column-start: 5;
+ grid-column-end: 6;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ overflow: hidden;
+}
+
+.surgeries{
+ grid-column-start: 7;
+ grid-column-end: 8;
+ grid-row-start: 1;
+ grid-row-end: 2;
+ overflow: hidden;
+}
+
+.logo{
+ grid-column-start: 1;
+ grid-column-end: 2;
+ grid-row-start: 1;
+ grid-row-end: 2;
+}
+.logo a{
+ float: left;
+ color: #015249;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.logo a:hover{
+background-color: #D2D2D2;
+
+}
+
+.emergencyPlanning a{
+ float: left;
+ color: #015249;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.emergencyPlanning a:hover{
+background-color: #D2D2D2;
+
+}
+
+.vaccinations a{
+ float: left;
+ color: #015249;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.vaccinations a:hover{
+background-color: #D2D2D2;
+
+}
+.surgeries a{
+ float: left;
+ color: #015249;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 20px;
+}
+
+.surgeries a:hover{
+background-color: #D2D2D2;
+
+}
+
+.banner{
+ grid-column-start: 1;
+ grid-column-end: 9;
+ background-color: #A5A5AF;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ animation-name: flash;
+ animation-duration: 0.5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+
+.warning{
+ grid-column-start: 3;
+ grid-row-start: 2;
+ text-align: center;
+ font-size: 40px;
+ color:#FFFFFF;
+}
+
+.top{
+ grid-column-start: 1;
+ grid-column-end: 9;
+ background-color: #015249;
+ font-size: 40px;
+ color:#FFFFFF;
+ padding: 100px 50px;
+}
+
+.bottom{
+ grid-column-start: 1;
+ grid-column-end: 9;
+ background-color: #57BC90;
+ font-size: 40px;
+ color:#FFFFFF;
+
+}
+
+p{
+  padding: 0 200px;
+}
+
+h2{
+ text-align: center;
+}
+
+h4{
+ text-align: center;
+}
+
+ul{
+ padding-left: 700px;
+}
+
+.footer{
+ grid-column-start: 1;
+ grid-column-end: 9;
+ background-color: #A5A5AF;
+ padding-left: 3em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+@keyframes flash{
+  from{background-color:#A5A5AF}
+  to  {background-color: red}
+}
